@@ -3,5 +3,5 @@ php批量导入导入excel，doc
 
 ### 安装
 ```
-composer require objui/export
+composer require zhouzeken/export
 ```
