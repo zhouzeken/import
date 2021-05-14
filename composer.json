@@ -1,6 +1,12 @@
 {
   "name": "zhouzeken/import",
   "desciption": "This is Excel file processing",
+  "keywords": [
+    "php",
+    "import",
+    "export"
+  ],
+  "homepage": "https://github.com/zhouzeken/import",
   "license": "MIT",
   "authors": [
     {
@@ -15,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "objui\\export\\": "src/"
+      "zhouzeken\\import\\": "src/"
     }
   },
   "require-dev": {
