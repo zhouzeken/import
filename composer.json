@@ -1,0 +1,23 @@
+{
+  "name": "zhouzeken/import",
+  "desciption": "This is Excel file processing",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhouzeken",
+      "email": "1454740914@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require":{
+    "php": ">=7.0",
+    "phpoffice/phpword": ">=0.17.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "objui\\export\\": "src/"
+    }
+  },
+  "require-dev": {
+  }
+}
