@@ -1,5 +1,6 @@
 {
     "name": "zhouzeken/import",
+    "license": "MIT",
     "authors": [
         {
             "name": "zhouzeken",
@@ -7,7 +8,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.0.0",
         "phpoffice/phpword": ">=0.17.0"
     },
     "autoload": {
