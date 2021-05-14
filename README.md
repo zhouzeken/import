@@ -1,2 +1,7 @@
-# import
-php导入和导出功能
+### 说明
+php批量导入导入excel，doc
+
+### 安装
+```
+composer require objui/export
+```
