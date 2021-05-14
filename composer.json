@@ -1,12 +1,6 @@
 {
   "name": "zhouzeken/import",
-  "desciption": "This is Excel file processing",
-  "keywords": [
-    "php",
-    "import",
-    "export"
-  ],
-  "homepage": "https://github.com/zhouzeken/import",
+  "description": "this php import/export",
   "license": "MIT",
   "authors": [
     {
@@ -15,15 +9,13 @@
     }
   ],
   "minimum-stability": "dev",
-  "require":{
+  "require": {
     "php": ">=7.0",
     "phpoffice/phpword": ">=0.17.0"
   },
   "autoload": {
-    "psr-4": {
+    "psr-4":{
       "zhouzeken\\import\\": "src/"
     }
-  },
-  "require-dev": {
   }
 }
