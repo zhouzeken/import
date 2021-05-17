@@ -1,11 +1,11 @@
 <?php
 /**
- * csv
+ * xls
  * User: zzk
  * Date: 2021/5/14
  */
 namespace zhouzeken\import\lib;
-class Csv implements IImport
+class Xls implements IImport
 {
     private $config = [
         'file_path'       => '',
@@ -50,9 +50,9 @@ class Csv implements IImport
     //导出
     public function export(){
         $params = $this->config;
-        $filename = Common::createFile('csv',$params['table_name']);
+        $filename = Common::createFile('xls',$params['table_name']);
         $header = (array)$params['table_header'];
-        $header = implode(',',$header);
+        $header = implode("\t",$header);
 
         $fileData = '';
         if(!empty($header)){
@@ -61,16 +61,12 @@ class Csv implements IImport
 
         $arr = (array)$params['table_data'];
         foreach ($arr as $k=>$v){
-            $tmp = implode(',',$v);
+            $tmp = implode("\t",$v);
             $fileData .= Common::utfToGbk($tmp)."\n";
         }
-
         // 头信息设置
-        header("Content-type:text/csv");
+        header('Content-Type:application/vnd.ms-excel');
         header("Content-Disposition:attachment;filename=" . $filename);
-        header('Cache-Control:must-revalidate,post-check=0,pre-check=0');
-        header('Expires:0');
-        header('Pragma:public');
         echo $fileData;
         exit;
     }

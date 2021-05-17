@@ -32,7 +32,6 @@ class Import
         }else{
             $type = substr(strrchr(self::$config['file_path'], '.'), 1);
         }
-
         switch ($type){
             case 'csv':
                 self::$instance = new \zhouzeken\import\lib\Csv(self::$config);
@@ -65,7 +64,6 @@ class Import
 
     //导出
     public function export(){
-        echo 1;die;
         $obj = self::getInstance();
         $obj->export();
     }
